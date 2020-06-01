@@ -13,6 +13,9 @@ class CacheL1:
             self.memory['Address'].append(None)
             self.memory['Data'].append('0000')
 
+    def getMemory(self):
+        return self.memory
+
     def setBlock(self, block, state, address,  data):
         ind = self.memory['Block'].index(block)
         self.memory['State'][ind] = state
@@ -21,9 +24,9 @@ class CacheL1:
         time.sleep(1)
         return self.getMemory()
     
-    def getMemory(self):
+    def printMemory(self):
         return print(pd.DataFrame(self.memory))
 
-a = CacheL1()
-a.getMemory()
+#a = CacheL1()
+#a.getMemory()
 #a.setBlock('1111', 'DM', '1', 'FFFF')
