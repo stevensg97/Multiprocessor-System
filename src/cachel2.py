@@ -24,8 +24,11 @@ class CacheL2:
         return self.getMemory()
     
     def getMemory(self):
+        return self.memory
+
+    def printMemory(self):
         return print(pd.DataFrame(self.memory))
 
 a = CacheL2()
-a.getMemory()
-#a.setBlock('1111', 'DM', '1', 'FFFF')
+#a.printMemory()
+#a.setBlock(2, 'DM', '1', '1101', 'FFFF')

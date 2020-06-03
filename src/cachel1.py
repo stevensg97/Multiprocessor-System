@@ -27,6 +27,8 @@ class CacheL1:
     def printMemory(self):
         return print(pd.DataFrame(self.memory))
 
-#a = CacheL1()
+a = CacheL1()
 #a.getMemory()
-#a.setBlock('1111', 'DM', '1', 'FFFF')
+#a.setBlock(1, 'DM', '1', 'FFFF')
+#a.printMemory()
+#a.getMemory()

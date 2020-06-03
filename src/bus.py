@@ -9,8 +9,7 @@ class Bus:
 
         result['State'] = "S"
         result['Address'] = address
-        result['Data'] = address
-            
+        result['Data'] = address       
     
     def l1WriteMiss(self):
         """ if state=="I":
@@ -20,8 +19,20 @@ class Bus:
         else:
             result['State'] = "S" """
 
+    def l1ReadHit(self):
+        return None
+
+    def l1WriteHit(self):
+        return None
+
     def l2ReadMiss(self):
         return None
 
     def l2WriteMiss(self):
+        return None
+
+    def l2ReadHit(self):
+        return None
+
+    def l2WriteHit(self):
         return None
