@@ -4,4 +4,4 @@ import cachel2
 
 class Chip:
     def __init__(self):
-        self = None
+        self.chip = None

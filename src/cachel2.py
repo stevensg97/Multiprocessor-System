@@ -27,7 +27,7 @@ class CacheL2:
         return self.memory
 
     def printMemory(self):
-        return print(pd.DataFrame(self.memory))
+        print(pd.DataFrame(self.memory))
 
 a = CacheL2()
 #a.printMemory()

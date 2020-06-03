@@ -61,18 +61,18 @@ class Core:
                 ': ' + instruction + ' ' + memoryAddress+ ';' + data + '\n')
         archivo.close()
 
-    def exec(self):
-        while True:
-            time.sleep(1)
-            self.genInstruction()
+    #def exec(self):
+    #    while True:
+    #        time.sleep(1)
+    #        self.genInstruction()
 
 
 
-a = Core(0, 'P0')
-b = Core(0, 'P1')
-p0 = threading.Thread(target=a.exec)
-p1 = threading.Thread(target=b.exec)
-p0.start()
-p1.start()
+#a = Core(0, 'P0')
+#b = Core(0, 'P1')
+#p0 = threading.Thread(target=a.exec)
+#p1 = threading.Thread(target=b.exec)
+#p0.start()
+#p1.start()
 
  

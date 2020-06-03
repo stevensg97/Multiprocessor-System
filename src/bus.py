@@ -2,7 +2,7 @@
 
 class Bus:
     def __init__(self):
-        self = None
+        self.bus = None
 
     def l1ReadMiss(self, chip, core, address, state):
         result = {'Block': '', 'State': '', 'Address': '', 'Data': ''}

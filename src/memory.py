@@ -25,7 +25,7 @@ class Memory:
         return self.getMemory()
     
     def getMemory(self):
-        return print(pd.DataFrame(self.memory))
+        print(pd.DataFrame(self.memory))
 
 a = Memory()
 a.setBlock('0011', 'DM', '0', 'A3B4')
