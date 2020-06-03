@@ -21,7 +21,7 @@ class CacheL2:
         self.memory['Address'][ind] = address
         self.memory['Data'][ind] = data
         time.sleep(3)
-        return self.getMemory()
+        return self.printMemory()
     
     def getMemory(self):
         return self.memory
@@ -30,5 +30,7 @@ class CacheL2:
         print(pd.DataFrame(self.memory))
 
 a = CacheL2()
-#a.printMemory()
-#a.setBlock(2, 'DM', '1', '1101', 'FFFF')
+a.printMemory()
+a.setBlock(2, 'DM', '1', '1101', 'FFFF')
+a.setBlock(0, 'DM', '0', '1001', '45EC')
+a.setBlock(2, 'DS', '1', '1101', 'FFFF')

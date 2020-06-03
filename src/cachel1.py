@@ -22,13 +22,12 @@ class CacheL1:
         self.memory['Address'][ind] = address
         self.memory['Data'][ind] = data
         time.sleep(1)
-        return self.getMemory()
+        return self.printMemory()
     
     def printMemory(self):
         print(pd.DataFrame(self.memory))
 
 a = CacheL1()
-#a.getMemory()
-#a.setBlock(1, 'DM', '1', 'FFFF')
-#a.printMemory()
-#a.getMemory()
+a.printMemory()
+a.setBlock(1, 'DM', '1001', 'AC8F')
+a.setBlock(0, 'DM', '1100', 'FA4B')
